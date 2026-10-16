@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Digital Defense Limited</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="brand-wrap" href="../index.html">
+                <img class="logo" src="../img/logo.svg" alt="Digital Defense Limited logo">
+                <span class="brand">Digital Defense Limited</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle menu">&#9776;</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html" class="active" aria-current="page">Contact Us</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero page-hero">
+        <div class="hero-inner">
+            <h1>Contact Us</h1>
+            <p>Tell us what you need protected and we will reply within one business day.</p>
+        </div>
+    </section>
+
+    <main class="container split">
+        <section>
+            <form id="contact-form" novalidate>
+                <fieldset>
+                    <legend>Send us a message</legend>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" autocomplete="name">
+                    <span class="error" id="name-error"></span>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email">
+                    <span class="error" id="email-error"></span>
+
+                    <label for="service">Service needed</label>
+                    <select id="service" name="service">
+                        <option>Manned guarding</option>
+                        <option>CCTV and monitoring</option>
+                        <option>Alarm systems</option>
+                        <option>Event security</option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                    <span class="error" id="message-error"></span>
+
+                    <button class="btn" type="submit">Send message</button>
+                    <p id="form-status" class="form-status"></p>
+                </fieldset>
+            </form>
+        </section>
+        <aside class="panel">
+            <h3>Reach us directly</h3>
+            <ul>
+                <li>Phone: (876) 555-0100</li>
+                <li>Email: info@digitaldefense.example</li>
+                <li>Hours: 24 hours, 7 days a week</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; Copyright <span id="year">2026</span> Digital Defense Limited. All rights reserved.</p>
+        <p>Privacy: we never share your personal information with third parties.</p>
+        <p>Developed by Ryan and Vinnette</p>
+    </footer>
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
